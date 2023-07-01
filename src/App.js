@@ -1,18 +1,18 @@
 import react, { useState } from "react"
-import {Header} from "./components/Header"
 import { createContext } from "react"
+import { GlobalStyle } from "./components/styles/GlobalStyle.styles"
+import { Home } from "./components/Home.js"
 
 export const LanguageContext = createContext({})
 
 export function App() {
     
-    const [language, setLanguage] = useState("en")
+    const [language, setLanguage] = useState("pl")
     
     return(
         <LanguageContext.Provider value={{language, setLanguage}}>
-            <div>
-                <Header/>
-            </div>
+            <GlobalStyle/>
+                <Home/>
         </LanguageContext.Provider>
         
     )
