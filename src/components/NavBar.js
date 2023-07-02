@@ -6,35 +6,35 @@ import { NavBarLinksElementStyle, NavBarLinksStyle, NavBarStyle, StyledIconLogo,
 import { ToggleLanguage } from "./ToggleLanguage"
 
 export function NavBar() {
-    const {language, setLanguage} = useContext(LanguageContext)
+    const { language, setLanguage } = useContext(LanguageContext)
 
-    
-    return(
+
+    return (
         <NavBarStyle>
             <NavBarLogosStyle>
-                <StyledIconLogo src={LinkedInLogo} alt="LinkedIn icon"/>
-                <StyledIconLogo src={GitHubLogo} alt="GitHub icon"/>
+                <a href="https://www.linkedin.com/in/kamil-jach-85a9bb1b5/" target="_blank"><StyledIconLogo src={LinkedInLogo} alt="LinkedIn icon" /></a>
+                <a href="https://github.com/kamilos04" target="_blank"><StyledIconLogo src={GitHubLogo} alt="GitHub icon" /></a>
             </NavBarLogosStyle>
             <NavBarLinksStyle>
                 <NavBarLinksElementStyle>
                     {language === "en" ? "Home" : "Główna"}
                 </NavBarLinksElementStyle>
                 <NavBarLinksElementStyle>
-                    Skills
+                    {language === "en" ? "Skills" : "Umiejętności"}
                 </NavBarLinksElementStyle>
                 <NavBarLinksElementStyle>
-                    Projects
+                    {language === "en" ? "Projects" : "Projekty"}
                 </NavBarLinksElementStyle>
                 <NavBarLinksElementStyle>
-                    About
+                    {language === "en" ? "About" : "O mnie"}
                 </NavBarLinksElementStyle>
                 <NavBarLinksElementStyle>
-                    Contact
+                    {language === "en" ? "Contact" : "Kontakt"}
                 </NavBarLinksElementStyle>
                 <NavBarLanguageStyle>
-                    <ToggleLanguage/>
+                    <ToggleLanguage />
                 </NavBarLanguageStyle>
-                
+
             </NavBarLinksStyle>
         </NavBarStyle>
     )

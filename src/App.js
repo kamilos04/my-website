@@ -7,7 +7,7 @@ export const LanguageContext = createContext({})
 
 export function App() {
     
-    const [language, setLanguage] = useState("pl")
+    const [language, setLanguage] = useState("en")
     
     return(
         <LanguageContext.Provider value={{language, setLanguage}}>

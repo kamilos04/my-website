@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledIconLogo = styled.img`
-    width: 3vw; 
+    width: 3rem; 
     margin-right: 20px;
 `
 export const NavBarStyle = styled.div`
@@ -33,4 +33,8 @@ export const NavBarLogosStyle = styled.div`
 
 export const NavBarLanguageStyle = styled.div`
     margin-left: 3vw;
+`
+export const LanguageToggleStyle = styled.img`
+    width: 2.5rem;
+    height: 1.25rem;
 `

@@ -1,5 +1,5 @@
 import react, { useContext} from "react"
-import { LanguageToggleStyle } from "./styles/ToggleLanguage.styles"
+import { LanguageToggleStyle } from "./styles/NavBar.styles"
 import PolishFlag from "../images/pl.png"
 import EnglishFlag from "../images/en.png"
 import { LanguageContext } from "../App"
