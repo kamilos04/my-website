@@ -2,8 +2,12 @@ import styled from "styled-components"
 
 export const StyledIconLogo = styled.img`
     width: 3rem; 
+    /* margin-right: 20px; */
+`
+export const NavBarSocialButton = styled.div`
     margin-right: 20px;
 `
+
 export const NavBarStyle = styled.div`
     display: flex;
     flex-direction: row;

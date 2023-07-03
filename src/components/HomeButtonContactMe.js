@@ -1,4 +1,4 @@
-import react, { useContext } from "react"
+import React, { useContext } from "react"
 import { HomeButtonContactStyle } from "./styles/Home.styles"
 import { LanguageContext } from "../App"
 
