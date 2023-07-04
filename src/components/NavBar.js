@@ -1,4 +1,4 @@
-import react, { useContext } from "react"
+import React, { useContext } from "react"
 import LinkedInLogo from "../images/linkedin.png"
 import GitHubLogo from "../images/github.png"
 import { LanguageContext } from "../App"

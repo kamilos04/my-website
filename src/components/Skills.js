@@ -1,16 +1,14 @@
 import { Box } from "@mui/material"
 import { TabPanel, TabList, TabContext } from "@mui/lab"
-import react, { useState } from "react"
+import React, { useState } from "react"
 import { TabStyled } from "./styles/SkillsTabs.styles"
 import { SkillsContent, SkillsTitle } from "./styles/Skills.styles"
-import { SkillsIcon } from "./SkillsIcon"
-import { SkillsData } from "./SkillsData"
 import { SkillsCategory } from "./SkillsCategory"
 
 export function Skills () {
     const [value, setValue] = useState("1")
     
-    const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    const handleChange = (event, newValue) => {
         setValue(newValue);
       };
 
@@ -20,7 +18,7 @@ export function Skills () {
             <Box sx={{ width: 'auto', typography: 'body1' }}>
             <TabContext value={value}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider',}}>
-                <TabList onChange={handleChange} aria-label="lab API tabs example">
+                <TabList onChange={handleChange} aria-label="lab API tabs example" centered>
                     <TabStyled label="All" value="1" />
                     <TabStyled label="Frontend" value="2" />
                     <TabStyled label="Backend" value="3" />
@@ -28,16 +26,16 @@ export function Skills () {
                 </TabList>
                 </Box>
                 <TabPanel value="1">
-                    t
+                    <SkillsCategory category="all"/>
                 </TabPanel>
                 <TabPanel value="2">
-                    <SkillsCategory category="backend" color="white"/>
+                    <SkillsCategory category="frontend"/>
                 </TabPanel>
                 <TabPanel value="3">
-                    t
+                    <SkillsCategory category="backend"/>
                 </TabPanel>
                 <TabPanel value="4">
-                    t
+                    <SkillsCategory category="other"/>
                 </TabPanel>
             </TabContext>
             </Box>
