@@ -10,8 +10,8 @@ export const HomeContent = styled.div`
 `
 
 export const HomeMainTextStyle = styled.div`
-    margin-left: 12%;
-    margin-top: 6%;
+    margin-left: 12rem;;
+    margin-top: 6rem;
     
 `
 
