@@ -5,7 +5,6 @@ import { Home } from "./components/Home.js"
 import { Skills } from "./components/Skills"
 import { Projects } from "./components/Projects"
 import { About } from "./components/About"
-import { Contact } from "./components/Contact"
 
 export const LanguageContext = createContext({})
 
@@ -20,7 +19,6 @@ export function App() {
                 <Skills/>
                 <Projects/>
                 <About/>
-                <Contact/>
         </LanguageContext.Provider>
         
     )
