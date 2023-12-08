@@ -21,11 +21,11 @@ export function Skills () {
             <Box sx={{ width: 'auto', typography: 'body1' }}>
             <TabContext value={value}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider',}}>
-                <TabList onChange={handleChange} aria-label="lab API tabs example" centered>
+                <TabList onChange={handleChange} aria-label="lab API tabs example" centered TabIndicatorProps={{style: {backgroundColor: "white"}}}>
                     <TabStyled label={language === "en" ? "All" : "Wszystkie"} value="1" />
                     <TabStyled label="Frontend" value="2" />
                     <TabStyled label="Backend" value="3" />
-                    <TabStyled label={language === "en" ? "All" : "Inne"} value="4" />
+                    <TabStyled label={language === "en" ? "Other" : "Inne"} value="4" />
                 </TabList>
                 </Box>
                 <TabPanel value="1">

@@ -12,7 +12,6 @@ export function Home() {
 
     return (
         <div>
-            <BackgroundImage src={BackgroundImageFile} alt="Test" />
             <HomeContent>
                 <NavBar />
                 <HomeMainTextStyle>

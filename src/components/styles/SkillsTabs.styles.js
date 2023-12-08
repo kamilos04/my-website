@@ -6,6 +6,6 @@ export const TabStyled = styled(Tab)`
         font-family: Lato;
         font-size: 2rem;
         &.Mui-selected {
-         color: #1bbafd;
+         color: white;
         }
     `

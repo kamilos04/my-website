@@ -13,7 +13,7 @@ export const NavBarStyle = styled.div`
     flex-direction: row;
     margin-top: 40px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 60px;
     align-items: center;
     justify-content: space-between;
     width: 100%;

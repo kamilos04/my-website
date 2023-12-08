@@ -4,13 +4,12 @@ export const SkillsContent = styled.div`
     display: flex;
     flex-direction: column;
 
-
     align-items: center;
 `
 
 export const SkillsTitle = styled.div`
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     font-weight: 700;
 `
 
