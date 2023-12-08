@@ -19,7 +19,7 @@ export function Home() {
                     <HomeHelloNameStyle>
                         <HomeHelloStyle>{language === "en" ? "Hi, I'm " : "Cześć! Jestem "} <HomeNameStyle>Kamil Jach</HomeNameStyle></HomeHelloStyle>
                     </HomeHelloNameStyle>
-                    <HomeDeveloperStyle>Frontend Developer</HomeDeveloperStyle>
+                    <HomeDeveloperStyle>Software Developer</HomeDeveloperStyle>
                     <HomeShortTextStyle>{language === "en" ?
                         "I'm a frontend developer, currently learning backend. I’m very willing to complete your order." :
                         "Jestem frontend developerem, uczącym się backendu. Bardzo chętnie zrealizuję twoje zlecenie."}</HomeShortTextStyle>
