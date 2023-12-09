@@ -22,9 +22,9 @@ export function NavBar() {
                 <NavBarLinksElementStyle>
                     {language === "en" ? "Skills" : "Umiejętności"}
                 </NavBarLinksElementStyle>
-                <NavBarLinksElementStyle>
+                {/* <NavBarLinksElementStyle>
                     {language === "en" ? "Projects" : "Projekty"}
-                </NavBarLinksElementStyle>
+                </NavBarLinksElementStyle> */}
                 <NavBarLinksElementStyle>
                     {language === "en" ? "About" : "O mnie"}
                 </NavBarLinksElementStyle>

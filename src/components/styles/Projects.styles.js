@@ -11,7 +11,8 @@ export const ProjectsContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
+    margin-top: 0;
 `
 
 export const ProjectsInfo = styled.div`

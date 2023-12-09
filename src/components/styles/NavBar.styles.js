@@ -9,6 +9,7 @@ export const NavBarSocialButton = styled.div`
 `
 
 export const NavBarStyle = styled.div`
+    /* position: fixed; */
     display: flex;
     flex-direction: row;
     margin-top: 40px;
@@ -18,6 +19,7 @@ export const NavBarStyle = styled.div`
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box; 
+    /* background-color: black; */
 `
 
 export const NavBarLinksStyle = styled.div`

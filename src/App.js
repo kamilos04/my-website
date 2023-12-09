@@ -17,7 +17,7 @@ export function App() {
             <GlobalStyle/>
                 <Home/>
                 <Skills/>
-                <Projects/>
+                {/* <Projects/> */}
                 <About/>
         </LanguageContext.Provider>
         

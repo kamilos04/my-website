@@ -6,18 +6,19 @@ export const AboutContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     width: 100%;
+    height: 100vh;
 `
 
 export const AboutTitle = styled.div`
     font-size: 3rem; 
+    margin-bottom: 5rem;
 `
 
 export const AboutTextPhoto = styled.div`
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
     margin-left: 12rem;
 `
 
@@ -33,9 +34,9 @@ export const AboutTextSection = styled.div`
 export const AboutPhoto = styled.img`
     width: 30rem;
     height: 30rem;
-    margin-right: 12rem;
+    /* margin-right: 12rem; */
     margin-left: 7rem;
-    filter: drop-shadow(30px 30px 40px #9400C8);
+    /* filter: drop-shadow(30px 30px 40px #9400C8); */
 `
 
 export const AboutTextImportant = styled.span`
