@@ -9,7 +9,12 @@ export const GlobalStyle = createGlobalStyle`
         background: rgb(0, 0, 0);
         margin: 0;
         color: white;
-        font-size: 36px;
+        /* display: flex;
+        flex-direction: column; */
+    }
+    html{
+        font-size: 17px;
+        
     }
     
 `

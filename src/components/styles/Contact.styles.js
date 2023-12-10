@@ -33,11 +33,12 @@ export const ContactImportantText = styled.div`
 export const ContactEmailAndIcon = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
 
 `
 
 export const ContactEmail = styled.div`
-
+    font-size: 2rem;
 `
 
 export const ContactIcon = styled.img`

@@ -9,23 +9,28 @@ export const NavBarSocialButton = styled.div`
 `
 
 export const NavBarStyle = styled.div`
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    padding-left: 30px;
-    padding-right: 60px;
+    /* padding-top: 40px; */
+    padding-top: 2.3rem;
+    /* padding-left: 30px; */
+    padding-left: 1.7rem;
+    /* padding-right: 60px; */
+    padding-right: 3.4rem;
+    padding-bottom: 1.5rem;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box; 
-    /* background-color: black; */
+    background-color: black;
+    z-index: 2;
 `
 
 export const NavBarLinksStyle = styled.div`
     display: flex;
     flex-direction: row;
-    font-size: 0.7em;
+    font-size: 1.5rem;
     font-weight: 400;
 `
 

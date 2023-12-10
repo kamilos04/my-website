@@ -12,7 +12,7 @@ export const HomeContent = styled.div`
 export const HomeMainTextStyle = styled.div`
     /* margin-left: 12rem; */
     margin-left: 10%;
-    margin-top: 6rem;
+    margin-top: 12rem;
     /* display: flex;
     flex-direction: column; */
     
@@ -55,7 +55,7 @@ export const HomeHelloNameStyle = styled.div`
 `
 
 export const HomeButtonContactStyle = styled.div`
-    width: 20%;
+    width: 17rem;
     margin-top: 5rem;
     border: 2px solid white;
     display: flex;
@@ -64,5 +64,6 @@ export const HomeButtonContactStyle = styled.div`
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     border-radius: 3rem;
     font-weight: 600;
-    background-color: rgba(255, 255, 255, 0.07)
+    background-color: rgba(255, 255, 255, 0.07);
+    font-size: 1.5rem;
 `
