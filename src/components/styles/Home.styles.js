@@ -10,8 +10,11 @@ export const HomeContent = styled.div`
 `
 
 export const HomeMainTextStyle = styled.div`
-    margin-left: 12rem;;
+    /* margin-left: 12rem; */
+    margin-left: 10%;
     margin-top: 6rem;
+    /* display: flex;
+    flex-direction: column; */
     
 `
 

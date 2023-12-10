@@ -21,5 +21,5 @@ export const TimelineOppositeContentStyled = styled(TimelineOppositeContent)`
 
 export const TimelineStyled = styled(Timeline)`
     padding: 0;
-    margin-right: 12rem;
+    /* margin-right: 12rem; */
 `

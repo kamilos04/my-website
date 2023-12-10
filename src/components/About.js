@@ -13,18 +13,14 @@ export function About() {
             <AboutTextPhoto>
                 <AboutText>
                     <AboutTextSection>{language === "en" ? <AboutTextImportant>Hello!</AboutTextImportant> : <AboutTextImportant>Cześć!</AboutTextImportant>}</AboutTextSection>
-                    <AboutTextSection>{language === "en" ? <>My name is <AboutTextImportant>Kamil</AboutTextImportant> and I'm <AboutTextImportant>19 years old</AboutTextImportant>. I have
-                        been interested in programming since elementary school. I always treated it as a hobby, but recently I decided to find a job as a Junior Developer, so I'm open
-                        to job opportunities and I would be very happy to take on assignments for website creation.</> : <>Jestem <AboutTextImportant>Kamil</AboutTextImportant> i
-                            mam <AboutTextImportant>18 lat</AboutTextImportant>. Programowaniem interesuję się od czasów szkoły podstawowej. Zawsze traktowałem to jako hobby, ale niedawno
-                        postanowiłem znaleźć pracę jako Junior Developer, więc jestem otwarty na propozycje pracy oraz chętnie przyjmę zlecenia na stworzenie stron internetowych.</>}
+                    <AboutTextSection>{language === "en" ? <>My name is <AboutTextImportant>Kamil</AboutTextImportant> and I'm <AboutTextImportant>19 years old</AboutTextImportant>.
+                        I've been interested in programming since elementary school. In October 2023, I started studying <AboutTextImportant>Computer Science at the AEI Faculty of the Silesian University of Technology</AboutTextImportant>.</> : <>Nazywam się <AboutTextImportant>Kamil</AboutTextImportant> i
+                            mam <AboutTextImportant>19 lat</AboutTextImportant>. Programowaniem interesuje się od szkoły podstawowej. W październiku 2023 roku zacząłem studiować <AboutTextImportant>informatykę na wydziale AEI Politechniki Śląskiej</AboutTextImportant>.</>}
                     </AboutTextSection>
-                    <AboutTextSection>{language === "en" ? <>From 2019 to 2022, I studied at <AboutTextImportant>VI High School named after Tadeusz Reytan in Warsaw</AboutTextImportant>,
-                        and I completed my final year of high school at <AboutTextImportant>IV High School named after KEN in Bielsko-Biała</AboutTextImportant> in 2023.</> : <>W latach 2019-2022
-                            uczyłem się w <AboutTextImportant>VI Liceum Ogólnokształcącym im. Tadeusza Reytana w Warszawie</AboutTextImportant>, a ostatnią klasę szkoły średniej skończyłem w
-                        <AboutTextImportant>IV Liceum Ogólnokształcącym im. KEN w Bielsku-Białej</AboutTextImportant> w 2023 r. </>}
-                    </AboutTextSection>
-                    <AboutTextSection>{language === "en" ? "I am interested in aviation and business. I also love physical activity, especially basketball." : "Interesuje się lotnictwem oraz biznesem. Uwielbiam również aktywność fizyczną a zwłaszcza koszykówkę."}</AboutTextSection>
+                    <AboutTextSection>{language === "en" ? <>Currently, my main goal is to achieve proficiency in using Django and React.
+                        Ultimately, I aim to develop web applications for use by other companies using these frameworks.</> : <> Aktualnie moim głównym celem jest osiągnięcie biegłości w posługiwaniu się Django oraz Reactem.
+                            Przy użyciu tych frameworkow docelowo chcę tworzyć aplikacje internetowe przeznaczone do użytku przez inne firmy.</>}</AboutTextSection>
+                    <AboutTextSection>{language === "en" ? <>Besides programming, I'm interested in aviation and business. I also love physical activity.</> : <>Poza programowaniem interesuję się lotnictwem oraz biznesem. Uwielbiam również aktywność fizyczną. </>}</AboutTextSection>
                 </AboutText>
                 <AboutTimeLine />
                 {/* <AboutPhoto src={Photo} alt="My photo" /> */}

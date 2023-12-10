@@ -19,7 +19,9 @@ export const AboutTitle = styled.div`
 export const AboutTextPhoto = styled.div`
     display: flex;
     flex-direction: row;
-    margin-left: 12rem;
+    /* margin-left: 12rem; */
+    margin-left: 10%;
+    margin-right: 10%;
 `
 
 export const AboutText = styled.div`
