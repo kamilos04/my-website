@@ -67,3 +67,18 @@ export const HomeButtonContactStyle = styled.div`
     background-color: rgba(255, 255, 255, 0.07);
     font-size: 1.5rem;
 `
+
+export const HomePhotoStyle = styled.img`
+    width: 30rem;
+    height: 30rem;
+    margin-top: 14rem;
+    /* margin-right: 3.4rem; */
+    margin-right: 10rem;
+`
+
+export const HomeTextPhotoStyle = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+`

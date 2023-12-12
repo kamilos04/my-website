@@ -35,7 +35,7 @@ export const NavBarLinksStyle = styled.div`
 `
 
 export const NavBarLinksElementStyle = styled.div`
-    margin-left: 3vw;
+    margin-left: 4rem;
 `
 
 export const NavBarLogosStyle = styled.div`
@@ -43,7 +43,7 @@ export const NavBarLogosStyle = styled.div`
 `
 
 export const NavBarLanguageStyle = styled.div`
-    margin-left: 3vw;
+    margin-left: 4rem;
 `
 export const LanguageToggleStyle = styled.img`
     width: 2.5rem;
