@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import { device } from "../DeviceSize"
 
 export const GlobalStyle = createGlobalStyle`
     body {
@@ -14,6 +14,36 @@ export const GlobalStyle = createGlobalStyle`
     }
     html{
         font-size: 17px;
+        
+        @media ${device.mobileS} {
+            font-size: 4px;
+        }
+
+        @media ${device.mobileM} {
+            font-size: 5px;
+        }
+
+        @media ${device.mobileL} {
+            font-size: 6px;
+        }
+
+        @media ${device.tablet} {
+            font-size: 10px;
+        }
+
+        @media ${device.laptop} {
+            font-size: 11px;
+        }
+
+        @media ${device.laptopL} {
+            font-size: 17px;
+        }
+
+        @media ${device.desktop} {
+            font-size: 20px;
+        }
+        
+        
         
     }
     
