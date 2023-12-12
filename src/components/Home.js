@@ -22,8 +22,8 @@ export function Home() {
                         </HomeHelloNameStyle>
                         <HomeDeveloperStyle>Software Developer</HomeDeveloperStyle>
                         <HomeShortTextStyle>{language === "en" ?
-                            "I'm a frontend developer, currently learning backend. I’m very willing to complete your order." :
-                            "Jestem frontend developerem, uczącym się backendu. Bardzo chętnie zrealizuję twoje zlecenie."}</HomeShortTextStyle>
+                            "I am a computer science student. I mainly work with Django and React." :
+                            "Jestem studentem informatyki. Głównie zajmuje się Django oraz Reactem."}</HomeShortTextStyle>
                         <HomeButtonContactMe />
                     </HomeMainTextStyle>
                     <HomePhotoStyle src={Photo} alt="My photo" />

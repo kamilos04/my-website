@@ -5,7 +5,7 @@ export const StyledIconLogo = styled.img`
     /* margin-right: 20px; */
 `
 export const NavBarSocialButton = styled.div`
-    margin-right: 20px;
+    margin-right: 1.5rem;
 `
 
 export const NavBarStyle = styled.div`

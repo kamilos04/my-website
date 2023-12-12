@@ -5,6 +5,8 @@ export const SkillsContent = styled.div`
     flex-direction: column;
     height: 100vh;
     align-items: center;
+    /* padding-left: 10rem;
+    padding-right: 10rem; */
 `
 
 export const SkillsTitle = styled.div`
@@ -38,4 +40,10 @@ export const SkillsTable = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 2rem;
+`
+
+export const SkillsTableDivCenter = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 `

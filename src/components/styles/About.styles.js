@@ -20,8 +20,8 @@ export const AboutTextPhoto = styled.div`
     display: flex;
     flex-direction: row;
     /* margin-left: 12rem; */
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 10rem;
+    margin-right: 10rem;
 `
 
 export const AboutText = styled.div`

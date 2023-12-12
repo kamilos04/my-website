@@ -6,12 +6,12 @@ export const HomeContent = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 `
 
 export const HomeMainTextStyle = styled.div`
     /* margin-left: 12rem; */
-    margin-left: 10%;
+    margin-left: 10rem;
     margin-top: 12rem;
     /* display: flex;
     flex-direction: column; */
