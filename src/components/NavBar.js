@@ -12,7 +12,7 @@ export function NavBar() {
     return (
         <NavBarStyle>
             <NavBarLogosStyle>
-                <NavBarSocialButton><a href="https://www.linkedin.com/in/kamil-jach-85a9bb1b5/" target="_blank"><StyledIconLogo src={LinkedInLogo} alt="LinkedIn icon" /></a></NavBarSocialButton>
+                <NavBarSocialButton><a href="https://www.linkedin.com/in/kamil-jach/" target="_blank"><StyledIconLogo src={LinkedInLogo} alt="LinkedIn icon" /></a></NavBarSocialButton>
                 <NavBarSocialButton><a href="https://github.com/kamilos04" target="_blank"><StyledIconLogo src={GitHubLogo} alt="GitHub icon" /></a></NavBarSocialButton>
             </NavBarLogosStyle>
             <NavBarLinksStyle>

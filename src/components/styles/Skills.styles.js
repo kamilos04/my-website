@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { device } from "../DeviceSize";
 
 export const SkillsContent = styled.div`
     display: flex;
@@ -7,6 +8,13 @@ export const SkillsContent = styled.div`
     align-items: center;
     /* padding-left: 10rem;
     padding-right: 10rem; */
+    @media ${device.mobileS} {
+        height: auto;
+        margin-bottom: 20rem;
+    }
+    @media ${device.tablet} {
+        height: 100vh;
+    }
 `
 
 export const SkillsTitle = styled.div`

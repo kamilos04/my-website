@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { device } from "../DeviceSize";
 
 
 export const HomeContent = styled.div`
@@ -7,6 +8,13 @@ export const HomeContent = styled.div`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    @media ${device.mobileS} {
+        min-height: 0;
+        margin-bottom: 20rem;
+    }
+    @media ${device.tablet} {
+        min-height: 100vh;
+    }
 `
 
 export const HomeMainTextStyle = styled.div`
@@ -44,7 +52,7 @@ export const HomeDeveloperStyle = styled.div`
 export const HomeShortTextStyle = styled.div`
     font-size: 2rem;
     margin-top: 4rem;
-    width: 55%;
+    width: 25rem;
     font-weight: 400;
 `
 
@@ -72,8 +80,17 @@ export const HomePhotoStyle = styled.img`
     width: 30rem;
     height: 30rem;
     margin-top: 14rem;
+    margin-left: 4rem;
     /* margin-right: 3.4rem; */
     margin-right: 10rem;
+    @media ${device.mobileS} {
+        width: 23rem;
+        height: 23rem;
+    }
+    @media ${device.mobileM} {
+        width: 25rem;
+        height: 25rem;
+    }
 `
 
 export const HomeTextPhotoStyle = styled.div`

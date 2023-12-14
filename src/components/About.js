@@ -1,6 +1,5 @@
 import React, { useContext } from "react"
-import { AboutContent, AboutPhoto, AboutText, AboutTextImportant, AboutTextPhoto, AboutTextSection, AboutTitle } from "./styles/About.styles"
-import Photo from "../images/photo.png"
+import { AboutContent, AboutPhoto, AboutText, AboutTextAndTimeLine, AboutTextImportant, AboutTextPhoto, AboutTextSection, AboutTitle } from "./styles/About.styles"
 import { LanguageContext } from "../App"
 import AboutTimeLine from "./AboutTimeLine"
 import { TimelineConnector, TimelineDot } from "@mui/lab"
@@ -10,7 +9,7 @@ export function About() {
     return (
         <AboutContent>
             <AboutTitle>{language === "en" ? "About" : "O mnie"}</AboutTitle>
-            <AboutTextPhoto>
+            <AboutTextAndTimeLine>
                 <AboutText>
                     <AboutTextSection>{language === "en" ? <AboutTextImportant>Hello!</AboutTextImportant> : <AboutTextImportant>Cześć!</AboutTextImportant>}</AboutTextSection>
                     <AboutTextSection>{language === "en" ? <>My name is <AboutTextImportant>Kamil</AboutTextImportant> and I'm <AboutTextImportant>19 years old</AboutTextImportant>.
@@ -23,8 +22,7 @@ export function About() {
                     <AboutTextSection>{language === "en" ? <>Besides programming, I'm interested in aviation and business. I also love physical activity.</> : <>Poza programowaniem interesuję się lotnictwem oraz biznesem. Uwielbiam również aktywność fizyczną. </>}</AboutTextSection>
                 </AboutText>
                 <AboutTimeLine />
-                {/* <AboutPhoto src={Photo} alt="My photo" /> */}
-            </AboutTextPhoto>
+            </AboutTextAndTimeLine>
 
         </AboutContent>
     )

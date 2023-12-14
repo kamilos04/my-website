@@ -26,7 +26,7 @@ export const ContactImportantText = styled.div`
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    display: inline-block
+    display: inline-block;
     
 `
 
