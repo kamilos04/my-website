@@ -6,7 +6,7 @@ import { HomeContent, HomeDeveloperStyle, HomeHelloNameStyle, HomeHelloStyle, Ho
 import { HomeButtonContactMe } from "./HomeButtonContactMe"
 import { LanguageContext } from "../App"
 import { Button, Fab } from "@mui/material"
-import Photo from "../images/photo.png"
+import Photo from "../images/photo2.png"
 
 export function Home() {
     const { language, setLanguage } = useContext(LanguageContext)
