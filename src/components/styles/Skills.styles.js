@@ -9,8 +9,8 @@ export const SkillsContent = styled.div`
     /* padding-left: 10rem;
     padding-right: 10rem; */
     @media ${device.mobileS} {
-        height: auto;
-        margin-bottom: 20rem;
+        height: 50rem;
+        //margin-bottom: 20rem;
     }
     @media ${device.tablet} {
         height: 100vh;
@@ -47,11 +47,29 @@ export const SkillsTable = styled.div`
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 3rem;
 `
 
 export const SkillsTableDivCenter = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+`
+
+export const SkillsTableButtons = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+`
+
+export const SkillsTableButton = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: ${props => props.checked ? "#5FFF5B" : "white"};
 `

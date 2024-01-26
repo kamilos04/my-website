@@ -16,6 +16,7 @@ export const StyledIconLogo = styled.img`
 `
 export const NavBarSocialButton = styled.div`
     margin-right: 1.5rem;
+    
     @media ${device.mobileS} {
         margin-right: 2.5rem;
     }
@@ -32,12 +33,12 @@ export const NavBarStyle = styled.div`
     display: flex;
     flex-direction: row;
     /* padding-top: 40px; */
-    padding-top: 2.3rem;
+    /* padding-top: 2.3rem; */
     /* padding-left: 30px; */
     padding-left: 1.7rem;
     /* padding-right: 60px; */
-    padding-right: 3.4rem;
-    padding-bottom: 1.5rem;
+    padding-right: 2.5rem;
+    /* padding-bottom: 1.5rem; */
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -64,7 +65,11 @@ export const NavBarLinksStyle = styled.div`
 `
 
 export const NavBarLinksElementStyle = styled.div`
-    margin-left: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
 `
 
 export const NavBarLogosStyle = styled.div`
@@ -72,7 +77,14 @@ export const NavBarLogosStyle = styled.div`
 `
 
 export const NavBarLanguageStyle = styled.div`
-    margin-left: 4rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
 `
 export const LanguageToggleStyle = styled.img`
     width: 2.5rem;
