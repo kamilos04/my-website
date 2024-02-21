@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { device } from "../DeviceSize";
-
+import { motion } from "framer-motion"
 
 export const HomeContent = styled.div`
     top: 0;
@@ -35,7 +35,7 @@ export const HomeNameStyle = styled.span`
     color: #5FFF5B;
 `
 
-export const HomeDeveloperStyle = styled.div`
+export const HomeDeveloperStyle = styled(motion.div)`
     font-size: 4rem;
     /* background: linear-gradient(90deg, #CB3066 0%, #16BFFD 100%); */
     /* background: linear-gradient(90deg, rgba(222,92,255,1) 0%, rgba(86,127,234,1) 100%); */
@@ -56,7 +56,7 @@ export const HomeShortTextStyle = styled.div`
     font-weight: 400;
 `
 
-export const HomeHelloNameStyle = styled.div`
+export const HomeHelloNameStyle = styled(motion.div)`
     font-size: 2rem;
     display: flex;
     flex-direction: row;

@@ -69,6 +69,8 @@ export const SkillsTableButton = styled.div`
     justify-content: center;
     padding-right: 2rem;
     padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: ${props => props.checked ? "#5FFF5B" : "white"};

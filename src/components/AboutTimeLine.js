@@ -23,7 +23,7 @@ export default function AboutMyTimeLine() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContentStyled>
-        {language === "en" ? <>Silesian University of Technology - Computer Science / AEI faculty</> : <>Politechnika Śląska - Informatyka / wydział AEI</>}
+        {language === "en" ? <>Silesian University of Technology - Computer Science / faculty of Applied Mathematics</> : <>Politechnika Śląska - Informatyka / wydział Matematyki Stosowanej</>}
         </TimelineContentStyled>
       </TimelineItem>
       <TimelineItem>

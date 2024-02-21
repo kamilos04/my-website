@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { device } from "../DeviceSize"
+import { motion } from "framer-motion"
 
 export const StyledIconLogo = styled.img`
     width: 3rem; 
@@ -64,7 +65,7 @@ export const NavBarLinksStyle = styled.div`
     }
 `
 
-export const NavBarLinksElementStyle = styled.div`
+export const NavBarLinksElementStyle = styled(motion.div)`
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;

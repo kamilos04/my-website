@@ -4,6 +4,7 @@ import GitHubLogo from "../images/github.png"
 import { LanguageContext } from "../App"
 import { NavBarLinksElementStyle, NavBarLinksStyle, NavBarStyle, StyledIconLogo, NavBarLogosStyle, NavBarLanguageStyle, NavBarSocialButton } from "./styles/NavBar.styles.js"
 import { ToggleLanguage } from "./ToggleLanguage"
+import { motion } from "framer-motion"
 
 export function NavBar() {
     const { language, setLanguage } = useContext(LanguageContext)
@@ -16,7 +17,7 @@ export function NavBar() {
                 <NavBarSocialButton><a href="https://github.com/kamilos04" target="_blank"><StyledIconLogo src={GitHubLogo} alt="GitHub icon" /></a></NavBarSocialButton>
             </NavBarLogosStyle>
             <NavBarLinksStyle>
-                <NavBarLinksElementStyle>
+                <NavBarLinksElementStyle >
                     {language === "en" ? "Home" : "Główna"}
                 </NavBarLinksElementStyle>
                 <NavBarLinksElementStyle>
@@ -26,7 +27,7 @@ export function NavBar() {
                     {language === "en" ? "Projects" : "Projekty"}
                 </NavBarLinksElementStyle> */}
                 <NavBarLinksElementStyle>
-                    {language === "en" ? "About" : "O mnie"}
+                    {language === "en" ? "About me" : "O mnie"}
                 </NavBarLinksElementStyle>
                 <NavBarLinksElementStyle>
                     {language === "en" ? "Contact" : "Kontakt"}
