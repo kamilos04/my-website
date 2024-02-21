@@ -17,7 +17,7 @@ export function App() {
         <LanguageContext.Provider value={{language, setLanguage}}>
             <GlobalStyle/>
                 <Home/>
-                <Skills/>
+                <Skills id="skillsSection"/>
                 {/* <Projects/> */}
                 <About/>
                 <Contact/>

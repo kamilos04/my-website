@@ -43,7 +43,7 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 20px;
         }
         
-        
+        /* scroll-behavior: smooth; */
         
     }
     

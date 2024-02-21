@@ -76,7 +76,7 @@ export const HomeButtonContactStyle = styled.div`
     font-size: 1.5rem;
 `
 
-export const HomePhotoStyle = styled.img`
+export const HomePhotoStyle = styled(motion.img)`
     width: 30rem;
     height: 30rem;
     margin-top: 14rem;

@@ -17,10 +17,16 @@ export function NavBar() {
                 <NavBarSocialButton><a href="https://github.com/kamilos04" target="_blank"><StyledIconLogo src={GitHubLogo} alt="GitHub icon" /></a></NavBarSocialButton>
             </NavBarLogosStyle>
             <NavBarLinksStyle>
-                <NavBarLinksElementStyle >
+                <NavBarLinksElementStyle>
                     {language === "en" ? "Home" : "Główna"}
                 </NavBarLinksElementStyle>
-                <NavBarLinksElementStyle>
+                <NavBarLinksElementStyle
+                // onClick={() => {
+                //     const element = document.getElementById('skillsSection');
+                //     console.log(element);
+                //     element?.scrollIntoView({behavior: "smooth"});
+                // }}
+                >
                     {language === "en" ? "Skills" : "Umiejętności"}
                 </NavBarLinksElementStyle>
                 {/* <NavBarLinksElementStyle>

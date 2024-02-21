@@ -6,6 +6,7 @@ export const SkillsContent = styled.div`
     flex-direction: column;
     height: 100vh;
     align-items: center;
+    justify-content: center;
     /* padding-left: 10rem;
     padding-right: 10rem; */
     @media ${device.mobileS} {

@@ -11,7 +11,7 @@ export function Skills () {
     const [page, setPage] = useState(1)
 
     return (
-        <SkillsContent>
+        <SkillsContent id="skillsSection">
             <SkillsTitle>{language === "en" ? "Skills" : "Umiejętności"}</SkillsTitle>
             <SkillsTable page={page} setPage={setPage}/>
             {page===1 ? <SkillsCategory category="all"/>: null}

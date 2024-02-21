@@ -19,6 +19,12 @@ const SoftDevAnimation = {
     show: { opacity: 1, x: 0, transition: { delay: 0.5, duration: 1, ease: "easeOut"} }
 }
 
+const PhotoAnimation= {
+    hidden: {opacity: 0, scale: 0.5},
+    show: {opacity: 1, scale: 1, transition: { delay: 1, duration: 1, type: "spring", ease: "easeOut"}},
+    hover: {scale: 1.1, transition: {duration: 0.5, type: "spring", bounce: 0.5,}}
+    // hover: {scale: [null, 1.15, 1.1], transition: {duration: 0.5}}
+}
 
 
 function ShortText(props) {
@@ -96,7 +102,12 @@ export function Home() {
                             <ShortText lang="pl"></ShortText>}
                         <HomeButtonContactMe />
                     </HomeMainTextStyle>
-                    <HomePhotoStyle src={Photo} alt="My photo" />
+                    <HomePhotoStyle
+                    variants={PhotoAnimation}
+                    initial="hidden"
+                    animate="show"
+                    whileHover="hover"
+                    src={Photo} alt="My photo" />
                 </HomeTextPhotoStyle>
             </HomeContent>
 
