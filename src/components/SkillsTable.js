@@ -16,12 +16,6 @@ export function SkillsTable(props) {
     return (
         
         <SkillsTableButtons>
-            {/* {language === "en" ? <SkillsPageButton text="All" page={props.page} click={() => props.setPage(1)}/> : <SkillsPageButton text="Wszystkie" click={() => props.setPage(1)}/>}
-            {language === "en" ? <SkillsPageButton text="Backend" click={() => props.setPage(2)}/> : <SkillsPageButton text="Backend" click={() => props.setPage(2)}/>}
-            {language === "en" ? <SkillsPageButton text="Frontend" click={() => props.setPage(3)}/> : <SkillsPageButton text="Frontend" click={() => props.setPage(3)}/>}
-            {language === "en" ? <SkillsPageButton text="Other" click={() => props.setPage(4)}/> : <SkillsPageButton text="Inne" click={() => props.setPage(4)}/>} */}
-
-
             <SkillsPageButton checked={props.page===1 ? true : false } text={language === "en" ? "All" : "Wszystkie"} page={props.page} click={() => props.setPage(1)}/>
             <SkillsPageButton checked={props.page===2 ? true : false } text={language === "en" ? "Backend" : "Backend"} page={props.page} click={() => props.setPage(2)}/>
             <SkillsPageButton checked={props.page===3 ? true : false } text={language === "en" ? "Frontend" : "Frontend"} page={props.page} click={() => props.setPage(3)}/>

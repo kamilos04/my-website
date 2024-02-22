@@ -11,33 +11,52 @@ export function NavBar() {
 
 
     return (
-        <NavBarStyle>
+        <NavBarStyle id="navbarSection">
             <NavBarLogosStyle>
                 <NavBarSocialButton><a href="https://www.linkedin.com/in/kamil-jach/" target="_blank"><StyledIconLogo src={LinkedInLogo} alt="LinkedIn icon" /></a></NavBarSocialButton>
                 <NavBarSocialButton><a href="https://github.com/kamilos04" target="_blank"><StyledIconLogo src={GitHubLogo} alt="GitHub icon" /></a></NavBarSocialButton>
             </NavBarLogosStyle>
             <NavBarLinksStyle>
-                <NavBarLinksElementStyle>
+                <NavBarLinksElementStyle
+                onClick={() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth', block: 'center', inline: 'center'  });
+                }}
+                >
                     {language === "en" ? "Home" : "Główna"}
                 </NavBarLinksElementStyle>
+
                 <NavBarLinksElementStyle
-                // onClick={() => {
-                //     const element = document.getElementById('skillsSection');
-                //     console.log(element);
-                //     element?.scrollIntoView({behavior: "smooth"});
-                // }}
+                onClick={() => {
+                    const element = document.getElementById('skillsSection');
+                    console.log(element);
+                    element?.scrollIntoView({behavior: "smooth", block: 'center', inline: 'center' });
+                }}
                 >
                     {language === "en" ? "Skills" : "Umiejętności"}
                 </NavBarLinksElementStyle>
+
                 {/* <NavBarLinksElementStyle>
                     {language === "en" ? "Projects" : "Projekty"}
                 </NavBarLinksElementStyle> */}
-                <NavBarLinksElementStyle>
+                
+                <NavBarLinksElementStyle
+                onClick={() => {
+                    const element = document.getElementById('aboutSection');
+                    console.log(element);
+                    element?.scrollIntoView({behavior: "smooth" });
+                }}
+                >
                     {language === "en" ? "About me" : "O mnie"}
                 </NavBarLinksElementStyle>
-                <NavBarLinksElementStyle>
+
+                <NavBarLinksElementStyle
+                onClick={() => {
+                    window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});
+                }}
+                >
                     {language === "en" ? "Contact" : "Kontakt"}
                 </NavBarLinksElementStyle>
+
                 <NavBarLanguageStyle>
                     <ToggleLanguage />
                 </NavBarLanguageStyle>

@@ -12,12 +12,13 @@ export const AboutContent = styled.div`
     height: 100vh;
     @media ${device.mobileS} {
         height: auto;
-        margin-bottom: 20rem;
+        margin-bottom: 15rem;
         font-size: 2rem;
     }
     @media ${device.tablet} {
         height: 100vh;
         font-size: 1.5rem;
+        justify-content: center;
     }
 `
 

@@ -7,7 +7,7 @@ export function About() {
     const { language, setLanguage } = useContext(LanguageContext)
 
     return (
-        <AboutContent>
+        <AboutContent id="aboutSection">
             <AboutTitle>{language === "en" ? "About me" : "O mnie"}</AboutTitle>
             <AboutTextAndTimeLine>
                 <AboutText>

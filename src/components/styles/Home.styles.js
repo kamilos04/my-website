@@ -10,7 +10,7 @@ export const HomeContent = styled.div`
     min-height: 100vh;
     @media ${device.mobileS} {
         min-height: 0;
-        margin-bottom: 20rem;
+        /* margin-bottom: 20rem; */
     }
     @media ${device.tablet} {
         min-height: 100vh;

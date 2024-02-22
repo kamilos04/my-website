@@ -15,6 +15,7 @@ export const SkillsContent = styled.div`
     }
     @media ${device.tablet} {
         height: 100vh;
+        justify-content: center;
     }
 `
 
