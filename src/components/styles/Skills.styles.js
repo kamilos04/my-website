@@ -10,7 +10,7 @@ export const SkillsContent = styled.div`
     /* padding-left: 10rem;
     padding-right: 10rem; */
     @media ${device.mobileS} {
-        
+        margin-top: 14rem;
         //margin-bottom: 20rem;
     }
     @media ${device.tablet} {
@@ -75,7 +75,7 @@ export const SkillsTableButton = styled.div`
     padding-left: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     color: ${props => props.checked ? "#5FFF5B" : "white"};
 `

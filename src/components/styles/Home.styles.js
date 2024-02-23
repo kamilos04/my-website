@@ -14,16 +14,23 @@ export const HomeContent = styled.div`
     }
     @media ${device.tablet} {
         min-height: 100vh;
+        
     }
 `
 
 export const HomeMainTextStyle = styled.div`
     /* margin-left: 12rem; */
-    margin-left: 10rem;
     margin-top: 12rem;
     /* display: flex;
     flex-direction: column; */
-    
+    @media ${device.mobileS} {
+        margin-top: 6rem;
+        margin-left: 5rem;
+    }
+    @media ${device.tablet} {
+        margin-top: 12rem;
+        margin-left: 10rem;
+    }
 `
 
 export const HomeHelloStyle = styled.div`
@@ -82,14 +89,20 @@ export const HomePhotoStyle = styled(motion.img)`
     margin-top: 14rem;
     margin-left: 4rem;
     /* margin-right: 3.4rem; */
-    margin-right: 10rem;
     @media ${device.mobileS} {
         width: 23rem;
         height: 23rem;
+        margin-right: 5rem;
     }
     @media ${device.mobileM} {
         width: 25rem;
         height: 25rem;
+        margin-right: 5rem;
+    }
+    @media ${device.tablet} {
+        width: 25rem;
+        height: 25rem;
+        margin-right: 10rem;
     }
 `
 

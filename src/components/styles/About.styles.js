@@ -13,6 +13,7 @@ export const AboutContent = styled.div`
     @media ${device.mobileS} {
         height: auto;
         margin-bottom: 15rem;
+        margin-top: 14rem;
         font-size: 2rem;
     }
     @media ${device.tablet} {
@@ -36,8 +37,8 @@ export const AboutTextAndTimeLine = styled.div`
     margin-right: 10rem;
     /* align-items: center; */
     @media ${device.mobileS} {
-        margin-left: 5rem;
-        margin-right: 5rem;  
+        margin-left: 3rem;
+        margin-right: 0rem;  
     }
     @media ${device.tablet} {
         margin-left: 10rem;

@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 17px;
         
         @media ${device.mobileS} {
-            font-size: 4px;
+            font-size: 5px;
         }
 
         @media ${device.mobileM} {
@@ -35,8 +35,12 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 11px;
         }
 
+        @media ${device.laptopM} {
+            font-size: 13px;
+        }
+
         @media ${device.laptopL} {
-            font-size: 17px;
+            font-size: 16px;
         }
 
         @media ${device.desktop} {
