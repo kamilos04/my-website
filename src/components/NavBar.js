@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import LinkedInLogo from "../images/linkedin.png"
 import GitHubLogo from "../images/github.png"
 import { LanguageContext } from "../App"
-import { NavBarLinksElementStyle, NavBarLinksStyle, NavBarStyle, StyledIconLogo, NavBarLogosStyle, NavBarLanguageStyle, NavBarSocialButton } from "./styles/NavBar.styles.js"
+import { NavBarLinksElementStyle, NavBarLinksStyle, NavBarStyle, StyledIconLogo, NavBarLogosStyle, NavBarLanguageStyle, NavBarSocialButton, NavBarMobileStyle } from "./styles/NavBar.styles.js"
 import { ToggleLanguage } from "./ToggleLanguage"
 import { motion } from "framer-motion"
 
@@ -11,6 +11,7 @@ export function NavBar() {
 
 
     return (
+        <div>
         <NavBarStyle id="navbarSection">
             <NavBarLogosStyle>
                 <NavBarSocialButton><a href="https://www.linkedin.com/in/kamil-jach/" target="_blank"><StyledIconLogo src={LinkedInLogo} alt="LinkedIn icon" /></a></NavBarSocialButton>
@@ -19,7 +20,7 @@ export function NavBar() {
             <NavBarLinksStyle>
                 <NavBarLinksElementStyle
                 onClick={() => {
-                    window.scrollTo({ top: 0, behavior: 'smooth', block: 'center', inline: 'center'  });
+                    window.scrollTo({ top: 0, behavior: 'smooth'  });
                 }}
                 >
                     {language === "en" ? "Home" : "Główna"}
@@ -29,7 +30,7 @@ export function NavBar() {
                 onClick={() => {
                     const element = document.getElementById('skillsSection');
                     console.log(element);
-                    element?.scrollIntoView({behavior: "smooth", block: 'center', inline: 'center' });
+                    element?.scrollIntoView({behavior: "smooth" });
                 }}
                 >
                     {language === "en" ? "Skills" : "Umiejętności"}
@@ -63,5 +64,16 @@ export function NavBar() {
 
             </NavBarLinksStyle>
         </NavBarStyle>
+
+        <NavBarMobileStyle>
+            <NavBarLogosStyle>
+                <NavBarSocialButton><a href="https://www.linkedin.com/in/kamil-jach/" target="_blank"><StyledIconLogo src={LinkedInLogo} alt="LinkedIn icon" /></a></NavBarSocialButton>
+                <NavBarSocialButton><a href="https://github.com/kamilos04" target="_blank"><StyledIconLogo src={GitHubLogo} alt="GitHub icon" /></a></NavBarSocialButton>
+            </NavBarLogosStyle>
+            <NavBarLanguageStyle>
+                    <ToggleLanguage />
+            </NavBarLanguageStyle>
+        </NavBarMobileStyle>
+        </div>
     )
 }

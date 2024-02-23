@@ -4,18 +4,19 @@ import { device } from "../DeviceSize";
 export const SkillsContent = styled.div`
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     /* padding-left: 10rem;
     padding-right: 10rem; */
     @media ${device.mobileS} {
-        height: 50rem;
+        
         //margin-bottom: 20rem;
     }
     @media ${device.tablet} {
         height: 100vh;
         justify-content: center;
+        /* height: 45rem; */
     }
 `
 
@@ -50,6 +51,7 @@ export const SkillsTable = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 3rem;
+    height: 18.7rem;
 `
 
 export const SkillsTableDivCenter = styled.div`

@@ -5,10 +5,10 @@ import { motion } from "framer-motion"
 export const StyledIconLogo = styled.img`
     width: 3rem; 
     @media ${device.mobileS} {
-        width: 4rem;
+        width: 5rem;
     }
     @media ${device.mobileM} {
-        width: 4rem;
+        width: 5rem;
     }
     @media ${device.tablet} {
         width: 3rem;
@@ -33,20 +33,35 @@ export const NavBarStyle = styled.div`
     position: fixed;
     display: flex;
     flex-direction: row;
-    /* padding-top: 40px; */
-    /* padding-top: 2.3rem; */
-    /* padding-left: 30px; */
     padding-left: 1.7rem;
-    /* padding-right: 60px; */
     padding-right: 2.5rem;
-    /* padding-bottom: 1.5rem; */
     align-items: center;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box; 
     background-color: black;
     z-index: 2;
-    
+    @media ${device.mobileS} {
+        display: none;
+    }
+    @media ${device.tablet} {
+        display: flex;
+    }
+`
+
+export const NavBarMobileStyle = styled.div`
+    @media ${device.mobileS} {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* width: 100%; */
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 3rem;
+    }
+    @media ${device.tablet} {
+        display: none;
+    }
 `
 
 export const NavBarLinksStyle = styled.div`
@@ -78,25 +93,41 @@ export const NavBarLogosStyle = styled.div`
 `
 
 export const NavBarLanguageStyle = styled.div`
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    cursor: pointer;
+    @media ${device.mobileS} {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        /* margin-right: 1rem; */
+        /* padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem; */
+        cursor: pointer;
+        /* align-items: center; */
+    }
+    @media ${device.tablet} {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        cursor: pointer;
+    }
+    
+    
 `
 export const LanguageToggleStyle = styled.img`
     width: 2.5rem;
     height: 1.25rem;
     @media ${device.mobileS} {
-        width: 3rem;
-        height: 1.5rem;
+        width: 5rem;
+        height: 2.5rem;
     }
     @media ${device.mobileM} {
-        width: 3rem;
-        height: 1.5rem;
+        width: 5rem;
+        height: 2.5rem;
     }
     @media ${device.tablet} {
         width: 2.5rem;

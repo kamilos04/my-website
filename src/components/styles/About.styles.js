@@ -9,7 +9,7 @@ export const AboutContent = styled.div`
     align-items: center;
     /* margin-top: 7rem; */
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     @media ${device.mobileS} {
         height: auto;
         margin-bottom: 15rem;
@@ -19,6 +19,7 @@ export const AboutContent = styled.div`
         height: 100vh;
         font-size: 1.5rem;
         justify-content: center;
+        padding-top: 4rem;
     }
 `
 
