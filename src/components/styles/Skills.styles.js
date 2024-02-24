@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { device } from "../DeviceSize";
+import { motion } from "framer-motion"
 
 export const SkillsContent = styled.div`
     display: flex;
@@ -20,13 +21,13 @@ export const SkillsContent = styled.div`
     }
 `
 
-export const SkillsTitle = styled.div`
+export const SkillsTitle = styled(motion.div)`
     font-size: 3rem;
     margin-bottom: 5rem;
     font-weight: 700;
 `
 
-export const SkillsIconStyle = styled.div`
+export const SkillsIconStyle = styled(motion.div)`
     width: 7rem;
     display: flex;
     flex-direction: column;
@@ -66,7 +67,7 @@ export const SkillsTableButtons = styled.div`
     justify-content: center;
 `
 
-export const SkillsTableButton = styled.div`
+export const SkillsTableButton = styled.button`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,4 +79,7 @@ export const SkillsTableButton = styled.div`
     font-size: 2rem;
     cursor: pointer;
     color: ${props => props.checked ? "#5FFF5B" : "white"};
+    background-color: transparent;
+    border: 0;
+    font-family: 'Lato', sans-serif;
 `

@@ -3,42 +3,50 @@ import { SkillsData } from "./SkillsData"
 import { SkillsIcon } from "./SkillsIcon"
 import { SkillsTable, SkillsTableDivCenter } from "./styles/Skills.styles"
 
+
 export function SkillsCategory(props) {
     let list = []
+    let listWithIndex = []
 
     if (props.category === "all") {
-        list = SkillsData.skills.map((skill) => (
-            <SkillsIcon image={skill.image} text={skill.text} />
-        ))
+        SkillsData.skills.map((skill) => {
+            list.push({ image: skill.image, text: skill.text })
+        })
     }
     else if (props.category === "frontend") {
-        list = SkillsData.skills.map((skill) => {
-            return (
-                skill.tabs.includes("frontend") ? <SkillsIcon image={skill.image} text={skill.text} /> : null
-            )
+        SkillsData.skills.map((skill) => {
+            if (skill.tabs.includes("frontend")) {
+                list.push({ image: skill.image, text: skill.text })
+            }
         })
     }
     else if (props.category === "backend") {
-        list = SkillsData.skills.map((skill) => {
-            return (
-                skill.tabs.includes("backend") ? <SkillsIcon image={skill.image} text={skill.text} /> : null
-            )
+        SkillsData.skills.map((skill) => {
+            if (skill.tabs.includes("backend")) {
+                list.push({ image: skill.image, text: skill.text })
+            }
         })
     }
     else if (props.category === "other") {
-        list = SkillsData.skills.map((skill) => {
-            return (
-                skill.tabs.includes("other") ? <SkillsIcon image={skill.image} text={skill.text} /> : null
-            )
+        SkillsData.skills.map((skill) => {
+            if (skill.tabs.includes("other")) {
+                list.push({ image: skill.image, text: skill.text })
+            }
         })
     }
 
+    listWithIndex = list.map((skill, index) => {
+        return (
+            <SkillsIcon image={skill.image} text={skill.text} indexNumber={index} />
+        )
+    })
+    
     const skillsTable =
-    <SkillsTableDivCenter>
-        <SkillsTable>
-            {list}
-        </SkillsTable>
-    </SkillsTableDivCenter>
+        <SkillsTableDivCenter>
+            <SkillsTable>
+                {listWithIndex}
+            </SkillsTable>
+        </SkillsTableDivCenter>
 
 
     return skillsTable

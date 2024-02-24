@@ -5,24 +5,25 @@ import { NavBar } from "../components/NavBar.js"
 import { HomeContent, HomeDeveloperStyle, HomeHelloNameStyle, HomeHelloStyle, HomeMainTextStyle, HomeNameStyle, HomePhotoStyle, HomeShortTextStyle, HomeTextPhotoStyle } from "./styles/Home.styles.js"
 import { HomeButtonContactMe } from "./HomeButtonContactMe"
 import { LanguageContext } from "../App"
-import { Button, Fab } from "@mui/material"
+// import { Button, Fab } from "@mui/material"
 import Photo from "../images/photo2.png"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
+import { ContactMessageBox } from "./ContactMessageBox.js"
 
 const HelloAnimation = {
     hidden: { opacity: 0, x: "-5rem" },
-    show: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut"} },
-    }
-
-const SoftDevAnimation = {
-    hidden: {opacity: 0, x: "-5rem" },
-    show: { opacity: 1, x: 0, transition: { delay: 0.5, duration: 1, ease: "easeOut"} }
+    show: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } },
 }
 
-const PhotoAnimation= {
-    hidden: {opacity: 0, scale: 0.5},
-    show: {opacity: 1, scale: 1, transition: { delay: 1, duration: 1, type: "spring", ease: "easeOut"}},
-    hover: {scale: 1.1, transition: {duration: 0.5, type: "spring", bounce: 0.5,}}
+const SoftDevAnimation = {
+    hidden: { opacity: 0, x: "-5rem" },
+    show: { opacity: 1, x: 0, transition: { delay: 0.5, duration: 1, ease: "easeOut" } }
+}
+
+const PhotoAnimation = {
+    hidden: { opacity: 0, scale: 0.5 },
+    show: { opacity: 1, scale: 1, transition: { delay: 1, duration: 1, type: "spring", ease: "easeOut" } },
+    hover: { scale: 1.1, transition: { duration: 0.5, type: "spring", bounce: 0.5, } }
     // hover: {scale: [null, 1.15, 1.1], transition: {duration: 0.5}}
 }
 
@@ -38,15 +39,15 @@ function ShortText(props) {
     // }
 
 
-    if(props.lang==="en"){
-        return(
+    if (props.lang === "en") {
+        return (
             <HomeShortTextStyle>
                 {shortTextENSplitted.map((element, index) => {
-                    return(
+                    return (
                         <motion.span
-                            initial={{opacity: 0}}
-                            animate={{opacity: 1}}
-                            transition={{duration: 0.04, delay: 1.5+index*0.04}}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.04, delay: 1.5 + index * 0.04 }}
                         >
                             {element}
                         </motion.span>
@@ -55,15 +56,15 @@ function ShortText(props) {
             </HomeShortTextStyle>
         )
     }
-    else{
-        return(
+    else {
+        return (
             <HomeShortTextStyle>
                 {shortTextPLSplitted.map((element, index) => {
-                    return(
+                    return (
                         <motion.span
-                            initial={{opacity: 0}}
-                            animate={{opacity: 1}}
-                            transition={{duration: 0.04, delay: 1.5+index*0.04}}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.04, delay: 1.5 + index * 0.04 }}
                         >
                             {element}
                         </motion.span>
@@ -73,6 +74,7 @@ function ShortText(props) {
         )
     }
 }
+
 
 export function Home() {
     const { language, setLanguage } = useContext(LanguageContext)
@@ -86,14 +88,14 @@ export function Home() {
                 <HomeTextPhotoStyle>
                     <HomeMainTextStyle>
                         <HomeHelloNameStyle
-                            variants={HelloAnimation} 
+                            variants={HelloAnimation}
                             initial="hidden"
                             animate="show"
                         >
                             <HomeHelloStyle>{language === "en" ? "Hi, I'm " : "Cześć! Jestem "} <HomeNameStyle>Kamil Jach</HomeNameStyle></HomeHelloStyle>
                         </HomeHelloNameStyle>
                         <HomeDeveloperStyle
-                            variants={SoftDevAnimation} 
+                            variants={SoftDevAnimation}
                             initial="hidden"
                             animate="show"
                         >Software Developer</HomeDeveloperStyle>
@@ -103,11 +105,11 @@ export function Home() {
                         <HomeButtonContactMe />
                     </HomeMainTextStyle>
                     <HomePhotoStyle
-                    variants={PhotoAnimation}
-                    initial="hidden"
-                    animate="show"
-                    whileHover="hover"
-                    src={Photo} alt="My photo" />
+                        variants={PhotoAnimation}
+                        initial="hidden"
+                        animate="show"
+                        whileHover="hover"
+                        src={Photo} alt="My photo" />
                 </HomeTextPhotoStyle>
             </HomeContent>
 

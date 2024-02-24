@@ -84,8 +84,8 @@ export const HomeHelloNameStyle = styled(motion.div)`
     flex-direction: row;
 `
 
-export const HomeButtonContactStyle = styled.div`
-    width: 17rem;
+export const HomeButtonContactStyle = styled.button`
+    width: 20rem;
     margin-top: 5rem;
     border: 2px solid white;
     display: flex;
@@ -96,6 +96,9 @@ export const HomeButtonContactStyle = styled.div`
     font-weight: 600;
     background-color: rgba(255, 255, 255, 0.07);
     font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    font-family: 'Lato', sans-serif;
 `
 
 export const HomePhotoStyle = styled(motion.img)`

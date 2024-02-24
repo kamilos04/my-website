@@ -69,6 +69,16 @@ export const NavBarLinksStyle = styled.div`
     flex-direction: row;
     font-size: 1.5rem;
     font-weight: 400;
+`
+
+export const NavBarLinksElementStyle = styled(motion.button)`
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
     @media ${device.mobileS} {
         font-size: 2rem;
     }
@@ -78,14 +88,8 @@ export const NavBarLinksStyle = styled.div`
     @media ${device.tablet} {
         font-size: 1.5rem;
     }
-`
-
-export const NavBarLinksElementStyle = styled(motion.div)`
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    cursor: pointer;
+    border: 0;
+    font-family: 'Lato', sans-serif;
 `
 
 export const NavBarLogosStyle = styled.div`

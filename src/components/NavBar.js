@@ -6,6 +6,13 @@ import { NavBarLinksElementStyle, NavBarLinksStyle, NavBarStyle, StyledIconLogo,
 import { ToggleLanguage } from "./ToggleLanguage"
 import { motion } from "framer-motion"
 
+const NavBarButtonAnimation = {
+    hidden: { opacity: 0, scale: 0.5 },
+    show: { opacity: 1, scale: 1, transition: { delay: 1, duration: 1, type: "spring", ease: "easeOut" } },
+    hover: { color: "#5FFF5B", transition: { duration: 0.2} }
+}
+
+
 export function NavBar() {
     const { language, setLanguage } = useContext(LanguageContext)
 
@@ -19,6 +26,10 @@ export function NavBar() {
             </NavBarLogosStyle>
             <NavBarLinksStyle>
                 <NavBarLinksElementStyle
+                variants={NavBarButtonAnimation}
+                initial="hidden"
+                animate="show"
+                whileHover="hover"
                 onClick={() => {
                     window.scrollTo({ top: 0, behavior: 'smooth'  });
                 }}
@@ -27,6 +38,10 @@ export function NavBar() {
                 </NavBarLinksElementStyle>
 
                 <NavBarLinksElementStyle
+                variants={NavBarButtonAnimation}
+                initial="hidden"
+                animate="show"
+                whileHover="hover"
                 onClick={() => {
                     const element = document.getElementById('skillsSection');
                     console.log(element);
@@ -41,6 +56,10 @@ export function NavBar() {
                 </NavBarLinksElementStyle> */}
                 
                 <NavBarLinksElementStyle
+                variants={NavBarButtonAnimation}
+                initial="hidden"
+                animate="show"
+                whileHover="hover"
                 onClick={() => {
                     const element = document.getElementById('aboutSection');
                     console.log(element);
@@ -51,6 +70,10 @@ export function NavBar() {
                 </NavBarLinksElementStyle>
 
                 <NavBarLinksElementStyle
+                variants={NavBarButtonAnimation}
+                initial="hidden"
+                animate="show"
+                whileHover="hover"
                 onClick={() => {
                     window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});
                 }}
