@@ -16,7 +16,7 @@ export const AboutContent = styled.div`
         margin-top: 14rem;
         font-size: 2rem;
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         height: 100vh;
         font-size: 1.5rem;
         justify-content: center;
@@ -40,7 +40,7 @@ export const AboutTextAndTimeLine = styled.div`
         margin-left: 3rem;
         margin-right: 0rem;  
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         margin-left: 10rem;
         margin-right: 10rem;  
     }

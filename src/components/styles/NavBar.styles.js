@@ -44,7 +44,7 @@ export const NavBarStyle = styled.div`
     @media ${device.mobileS} {
         display: none;
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: flex;
     }
 `
@@ -59,7 +59,7 @@ export const NavBarMobileStyle = styled.div`
         padding-right: 3rem;
         padding-top: 3rem;
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: none;
     }
 `
@@ -105,7 +105,7 @@ export const NavBarLanguageStyle = styled.div`
         cursor: pointer;
         /* align-items: center; */
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         margin-left: 1rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -129,7 +129,7 @@ export const LanguageToggleStyle = styled.img`
         width: 5rem;
         height: 2.5rem;
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         width: 2.5rem;
         height: 1.25rem;
     }

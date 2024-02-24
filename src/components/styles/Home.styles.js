@@ -12,7 +12,7 @@ export const HomeContent = styled.div`
         min-height: 0;
         /* margin-bottom: 20rem; */
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         min-height: 100vh;
         
     }
@@ -27,23 +27,38 @@ export const HomeMainTextStyle = styled.div`
         margin-top: 6rem;
         margin-left: 5rem;
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         margin-top: 12rem;
         margin-left: 10rem;
     }
 `
 
 export const HomeHelloStyle = styled.div`
-    font-size: 6rem
+    @media ${device.mobileS} {
+        font-size: 4rem;
+    }
+    @media ${device.laptop} {
+        font-size: 6rem;
+    }
 `
 
 export const HomeNameStyle = styled.span`
-    font-size: 6rem;
     color: #5FFF5B;
+    @media ${device.mobileS} {
+        font-size: 4rem;
+    }
+    @media ${device.laptop} {
+        font-size: 6rem;
+    }
 `
 
 export const HomeDeveloperStyle = styled(motion.div)`
-    font-size: 4rem;
+    @media ${device.mobileS} {
+        font-size: 3rem;
+    }
+    @media ${device.laptop} {
+        font-size: 4rem;
+    }
     /* background: linear-gradient(90deg, #CB3066 0%, #16BFFD 100%); */
     /* background: linear-gradient(90deg, rgba(222,92,255,1) 0%, rgba(86,127,234,1) 100%); */
     background: linear-gradient(90deg, rgba(203,48,102,1) 0%, rgba(98,101,255,1) 50%, rgba(22,191,253,1) 100%);
@@ -86,23 +101,25 @@ export const HomeButtonContactStyle = styled.div`
 export const HomePhotoStyle = styled(motion.img)`
     width: 30rem;
     height: 30rem;
-    margin-top: 14rem;
     margin-left: 4rem;
     /* margin-right: 3.4rem; */
     @media ${device.mobileS} {
         width: 23rem;
         height: 23rem;
         margin-right: 5rem;
+        margin-top: 10rem;
     }
     @media ${device.mobileM} {
         width: 25rem;
         height: 25rem;
         margin-right: 5rem;
     }
-    @media ${device.tablet} {
+    
+    @media ${device.laptop} {
         width: 25rem;
         height: 25rem;
         margin-right: 10rem;
+        margin-top: 14rem;
     }
 `
 

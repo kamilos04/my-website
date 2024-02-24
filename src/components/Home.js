@@ -1,6 +1,6 @@
 import react, { useContext } from "react"
-import BackgroundImageFile from "../images/background.png"
-import { BackgroundImage } from "../components/styles/Background.styles"
+// import BackgroundImageFile from "../images/background.png"
+// import { BackgroundImage } from "../components/styles/Background.styles"
 import { NavBar } from "../components/NavBar.js"
 import { HomeContent, HomeDeveloperStyle, HomeHelloNameStyle, HomeHelloStyle, HomeMainTextStyle, HomeNameStyle, HomePhotoStyle, HomeShortTextStyle, HomeTextPhotoStyle } from "./styles/Home.styles.js"
 import { HomeButtonContactMe } from "./HomeButtonContactMe"

@@ -13,7 +13,7 @@ export const SkillsContent = styled.div`
         margin-top: 14rem;
         //margin-bottom: 20rem;
     }
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         height: 100vh;
         justify-content: center;
         /* height: 45rem; */
