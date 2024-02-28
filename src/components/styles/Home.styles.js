@@ -84,7 +84,7 @@ export const HomeHelloNameStyle = styled(motion.div)`
     flex-direction: row;
 `
 
-export const HomeButtonContactStyle = styled.button`
+export const HomeButtonContactStyle = styled(motion.button)`
     width: 20rem;
     margin-top: 5rem;
     border: 2px solid white;

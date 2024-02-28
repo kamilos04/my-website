@@ -13,7 +13,7 @@ const NavBarButtonAnimation = {
 }
 
 const LinkedInGitHubAnimation = {
-    hidden: {opacity: 0, y: -200},
+    hidden: {opacity: 0, y: -500},
     show: { y: 0, opacity: 1, transition: { delay: 1.5, duration: 1, type: "spring", ease: "easeOut" } },
 }
 
@@ -118,7 +118,11 @@ export function NavBar() {
                 animate="show"
                 src={GitHubLogo} alt="GitHub icon" /></a></NavBarSocialButton>
             </NavBarLogosStyle>
-            <NavBarLanguageStyle>
+            <NavBarLanguageStyle
+            variants={NavBarButtonAnimation}
+            initial="hidden"
+            animate="show"
+            >
                     <ToggleLanguage />
             </NavBarLanguageStyle>
         </NavBarMobileStyle>

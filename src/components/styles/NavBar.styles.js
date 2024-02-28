@@ -133,6 +133,10 @@ export const LanguageToggleStyle = styled.img`
         width: 5rem;
         height: 2.5rem;
     }
+    @media ${device.tablet} {
+        width: 4rem;
+        height: 2rem;
+    }
     @media ${device.laptop} {
         width: 2.5rem;
         height: 1.25rem;

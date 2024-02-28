@@ -3,6 +3,8 @@ import Timeline from '@mui/lab/Timeline';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import { device } from "../DeviceSize";
+import { motion } from "framer-motion"
+
 export const TimelineContentStyled = styled(TimelineContent)`
         color: white;
         font-size: 1.2rem;
@@ -31,4 +33,8 @@ export const TimelineOppositeContentStyled = styled(TimelineOppositeContent)`
 export const TimelineStyled = styled(Timeline)`
     padding: 0;
     /* margin-right: 12rem; */
+`
+
+export const TimelineDivStyle = styled(motion.div)`
+
 `

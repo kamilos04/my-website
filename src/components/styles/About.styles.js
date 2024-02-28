@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { device } from "../DeviceSize";
-
+import { motion } from "framer-motion"
 
 export const AboutContent = styled.div`
     font-size: 1.5rem;
@@ -24,7 +24,7 @@ export const AboutContent = styled.div`
     }
 `
 
-export const AboutTitle = styled.div`
+export const AboutTitle = styled(motion.div)`
     font-size: 3rem; 
     margin-bottom: 5rem;
 `
@@ -46,7 +46,7 @@ export const AboutTextAndTimeLine = styled.div`
     }
 `
 
-export const AboutText = styled.div`
+export const AboutText = styled(motion.div)`
     
 `
 

@@ -5,12 +5,30 @@ import AboutTimeLine from "./AboutTimeLine"
 import { TimelineConnector, TimelineDot } from "@mui/lab"
 export function About() {
     const { language, setLanguage } = useContext(LanguageContext)
+    const TitleAnimation = {
+        hidden: {opacity: 0, scale: 0.5},
+        show: { opacity: 1, scale: 1, transition: { duration: 1, type: "spring", ease: "easeOut" } },
+    }
 
     return (
         <AboutContent id="aboutSection">
-            <AboutTitle>{language === "en" ? "About me" : "O mnie"}</AboutTitle>
+            <AboutTitle
+            variants={TitleAnimation}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+                once: true
+            }}
+            >{language === "en" ? "About me" : "O mnie"}</AboutTitle>
             <AboutTextAndTimeLine>
-                <AboutText>
+                <AboutText
+                variants={TitleAnimation}
+                initial="hidden"
+                whileInView={{ opacity: 1, scale: 1, transition: { delay: 0.3,duration: 1, type: "spring", ease: "easeOut" } }}
+                viewport={{
+                    once: true
+                }}
+                >
                     <AboutTextSection>{language === "en" ? <AboutTextImportant>Hello!</AboutTextImportant> : <AboutTextImportant>Cześć!</AboutTextImportant>}</AboutTextSection>
                     <AboutTextSection>{language === "en" ? <>My name is <AboutTextImportant>Kamil</AboutTextImportant> and I'm <AboutTextImportant>19 years old</AboutTextImportant>.
                         I've been interested in programming since elementary school. In October 2023, I started studying <AboutTextImportant>Computer Science at the Applied Mathematics faculty of the Silesian University of Technology</AboutTextImportant>.</> : <>Nazywam się <AboutTextImportant>Kamil</AboutTextImportant> i
