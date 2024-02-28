@@ -3,8 +3,20 @@ import { LanguageContext } from "../App"
 import { SkillsTableButton, SkillsTableButtons } from "./styles/Skills.styles"
 
 export function SkillsPageButton(props) {
+    const ButtonsAnimation = {
+        hidden: {opacity: 0, scale: 0.5},
+        show: { opacity: 1, scale: 1, transition: { delay: 0.3, duration: 1, type: "spring", ease: "easeOut" } },
+    }
+    
     return (
-        <SkillsTableButton checked={props.checked} onClick={props.click}>
+        <SkillsTableButton 
+        variants={ButtonsAnimation}
+        initial="hidden"
+        whileInView="show"
+        viewport={{
+            once: true,
+        }}
+        checked={props.checked} onClick={props.click}>
             {props.text}
         </SkillsTableButton>
     )

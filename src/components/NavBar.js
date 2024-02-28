@@ -12,6 +12,11 @@ const NavBarButtonAnimation = {
     hover: { color: "#5FFF5B", transition: { duration: 0.2} }
 }
 
+const LinkedInGitHubAnimation = {
+    hidden: {opacity: 0, y: -200},
+    show: { y: 0, opacity: 1, transition: { delay: 1.5, duration: 1, type: "spring", ease: "easeOut" } },
+}
+
 
 export function NavBar() {
     const { language, setLanguage } = useContext(LanguageContext)
@@ -21,8 +26,16 @@ export function NavBar() {
         <div>
         <NavBarStyle id="navbarSection">
             <NavBarLogosStyle>
-                <NavBarSocialButton><a href="https://www.linkedin.com/in/kamil-jach/" target="_blank"><StyledIconLogo src={LinkedInLogo} alt="LinkedIn icon" /></a></NavBarSocialButton>
-                <NavBarSocialButton><a href="https://github.com/kamilos04" target="_blank"><StyledIconLogo src={GitHubLogo} alt="GitHub icon" /></a></NavBarSocialButton>
+                <NavBarSocialButton><a href="https://www.linkedin.com/in/kamil-jach/" target="_blank"><StyledIconLogo
+                variants={LinkedInGitHubAnimation}
+                initial="hidden"
+                animate="show"
+                src={LinkedInLogo} alt="LinkedIn icon" /></a></NavBarSocialButton>
+                <NavBarSocialButton><a href="https://github.com/kamilos04" target="_blank"><StyledIconLogo 
+                variants={LinkedInGitHubAnimation}
+                initial="hidden"
+                animate="show"
+                src={GitHubLogo} alt="GitHub icon" /></a></NavBarSocialButton>
             </NavBarLogosStyle>
             <NavBarLinksStyle>
                 <NavBarLinksElementStyle
@@ -81,7 +94,11 @@ export function NavBar() {
                     {language === "en" ? "Contact" : "Kontakt"}
                 </NavBarLinksElementStyle>
 
-                <NavBarLanguageStyle>
+                <NavBarLanguageStyle
+                variants={NavBarButtonAnimation}
+                initial="hidden"
+                animate="show"
+                >
                     <ToggleLanguage />
                 </NavBarLanguageStyle>
 
@@ -90,8 +107,16 @@ export function NavBar() {
 
         <NavBarMobileStyle>
             <NavBarLogosStyle>
-                <NavBarSocialButton><a href="https://www.linkedin.com/in/kamil-jach/" target="_blank"><StyledIconLogo src={LinkedInLogo} alt="LinkedIn icon" /></a></NavBarSocialButton>
-                <NavBarSocialButton><a href="https://github.com/kamilos04" target="_blank"><StyledIconLogo src={GitHubLogo} alt="GitHub icon" /></a></NavBarSocialButton>
+                <NavBarSocialButton><a href="https://www.linkedin.com/in/kamil-jach/" target="_blank"><StyledIconLogo 
+                variants={LinkedInGitHubAnimation}
+                initial="hidden"
+                animate="show"
+                src={LinkedInLogo} alt="LinkedIn icon" /></a></NavBarSocialButton>
+                <NavBarSocialButton><a href="https://github.com/kamilos04" target="_blank"><StyledIconLogo 
+                variants={LinkedInGitHubAnimation}
+                initial="hidden"
+                animate="show"
+                src={GitHubLogo} alt="GitHub icon" /></a></NavBarSocialButton>
             </NavBarLogosStyle>
             <NavBarLanguageStyle>
                     <ToggleLanguage />

@@ -67,7 +67,7 @@ export const SkillsTableButtons = styled.div`
     justify-content: center;
 `
 
-export const SkillsTableButton = styled.button`
+export const SkillsTableButton = styled(motion.button)`
     display: flex;
     flex-direction: row;
     align-items: center;

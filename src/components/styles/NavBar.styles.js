@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { device } from "../DeviceSize"
 import { motion } from "framer-motion"
 
-export const StyledIconLogo = styled.img`
+export const StyledIconLogo = styled(motion.img)`
     width: 3rem; 
     @media ${device.mobileS} {
         width: 5rem;
@@ -96,7 +96,7 @@ export const NavBarLogosStyle = styled.div`
     display: flex;
 `
 
-export const NavBarLanguageStyle = styled.div`
+export const NavBarLanguageStyle = styled(motion.div)`
     @media ${device.mobileS} {
         margin-left: 1rem;
         margin-top: 1rem;
