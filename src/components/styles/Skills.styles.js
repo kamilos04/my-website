@@ -39,6 +39,7 @@ export const SkillsIconStyle = styled(motion.div)`
 
 export const SkillsIconTextStyle = styled.div`
     font-size: 1.5rem;
+    text-align: center;
 `
 
 export const SkillsIconImgStyle = styled.img`

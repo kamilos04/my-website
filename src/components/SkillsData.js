@@ -6,6 +6,7 @@ import HTMLImg from "../images/html.png"
 import GitImg from "../images/git.png"
 import GitHubImg from "../images/github.png"
 import DjangoImg from "../images/django.png"
+import FramerMotionImg from "../images/framermotion.png"
 export const SkillsData = {
     "color": "white",
     "skills": [
@@ -48,6 +49,11 @@ export const SkillsData = {
             "text": "Django",
             "image": DjangoImg,
             "tabs": ["backend"]
+        },
+        {
+            "text": "Framer Motion",
+            "image": FramerMotionImg,
+            "tabs": ["frontend"]
         },
     ]
 }
