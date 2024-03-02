@@ -55,14 +55,6 @@ export const AboutTextSection = styled.div`
     font-weight: 400;
 `
 
-// export const AboutPhoto = styled.img`
-//     width: 30rem;
-//     height: 30rem;
-//     /* margin-right: 12rem; */
-//     margin-left: 7rem;
-//     /* filter: drop-shadow(30px 30px 40px #9400C8); */
-// `
-
 export const AboutTextImportant = styled.span`
     font-weight: 900;
     color: #5FFF5B;

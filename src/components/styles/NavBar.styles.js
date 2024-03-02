@@ -54,7 +54,6 @@ export const NavBarMobileStyle = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        /* width: 100%; */
         padding-left: 3rem;
         padding-right: 3rem;
         padding-top: 3rem;
@@ -101,23 +100,19 @@ export const NavBarLanguageStyle = styled(motion.div)`
         margin-left: 1rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        /* margin-right: 1rem; */
-        /* padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem; */
-        cursor: pointer;
-        /* align-items: center; */
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     @media ${device.laptop} {
         margin-left: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        cursor: pointer;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        margin-right: 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     
     
@@ -125,6 +120,7 @@ export const NavBarLanguageStyle = styled(motion.div)`
 export const LanguageToggleStyle = styled.img`
     width: 2.5rem;
     height: 1.25rem;
+    cursor: pointer;
     @media ${device.mobileS} {
         width: 5rem;
         height: 2.5rem;
@@ -140,5 +136,9 @@ export const LanguageToggleStyle = styled.img`
     @media ${device.laptop} {
         width: 2.5rem;
         height: 1.25rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 `

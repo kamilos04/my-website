@@ -1,11 +1,8 @@
 import react, { useContext } from "react"
-// import BackgroundImageFile from "../images/background.png"
-// import { BackgroundImage } from "../components/styles/Background.styles"
 import { NavBar } from "../components/NavBar.js"
 import { HomeContent, HomeDeveloperStyle, HomeHelloNameStyle, HomeHelloStyle, HomeMainTextStyle, HomeNameStyle, HomePhotoStyle, HomeShortTextStyle, HomeTextPhotoStyle } from "./styles/Home.styles.js"
 import { HomeButtonContactMe } from "./HomeButtonContactMe"
 import { LanguageContext } from "../App"
-// import { Button, Fab } from "@mui/material"
 import Photo from "../images/photo2.png"
 import { motion } from "framer-motion"
 import { ContactMessageBox } from "./ContactMessageBox.js"
@@ -24,7 +21,6 @@ const PhotoAnimation = {
     hidden: { opacity: 0, scale: 0.5 },
     show: { opacity: 1, scale: 1, transition: { delay: 1, duration: 1, type: "spring", ease: "easeOut" } },
     hover: { scale: 1.1, transition: { duration: 0.5, type: "spring", bounce: 0.5, } }
-    // hover: {scale: [null, 1.15, 1.1], transition: {duration: 0.5}}
 }
 
 
@@ -33,10 +29,6 @@ function ShortText(props) {
     const shortTextENSplitted = shortTextEN.split("");
     const shortTextPL = "Jestem studentem informatyki. Głównie zajmuje się Django oraz Reactem."
     const shortTextPLSplitted = shortTextPL.split("");
-    // const ShortTextAnimation = {
-    //     hidden: { opacity: 0 },
-    //     show: { opacity: 1, transition: { duration: 1} },
-    // }
 
 
     if (props.lang === "en") {
