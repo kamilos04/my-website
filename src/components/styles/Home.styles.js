@@ -42,8 +42,9 @@ export const HomeHelloStyle = styled.div`
     }
 `
 
-export const HomeNameStyle = styled.span`
+export const HomeNameStyle = styled.h1`
     color: #5FFF5B;
+    display: inline;
     @media ${device.mobileS} {
         font-size: 4rem;
     }
@@ -52,7 +53,7 @@ export const HomeNameStyle = styled.span`
     }
 `
 
-export const HomeDeveloperStyle = styled(motion.div)`
+export const HomeDeveloperStyle = styled(motion.h2)`
     @media ${device.mobileS} {
         font-size: 3rem;
     }
@@ -68,7 +69,9 @@ export const HomeDeveloperStyle = styled(motion.div)`
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    display: inline-block
+    display: inline-block;
+    margin-block-start: 0;
+    margin-block-end: 0;
 `
 
 export const HomeShortTextStyle = styled.div`

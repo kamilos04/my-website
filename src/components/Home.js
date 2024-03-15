@@ -1,6 +1,6 @@
 import react, { useContext } from "react"
 import { NavBar } from "../components/NavBar.js"
-import { HomeContent, HomeDeveloperStyle, HomeHelloNameStyle, HomeHelloStyle, HomeMainTextStyle, HomeNameStyle, HomePhotoStyle, HomeShortTextStyle, HomeTextPhotoStyle } from "./styles/Home.styles.js"
+import { HomeContent, HomeDeveloperStyle, HomeH3Style, HomeHelloNameStyle, HomeHelloStyle, HomeMainTextStyle, HomeNameStyle, HomePhotoStyle, HomeShortTextStyle, HomeTextPhotoStyle } from "./styles/Home.styles.js"
 import { HomeButtonContactMe } from "./HomeButtonContactMe"
 import { LanguageContext } from "../App"
 import Photo from "../images/photo2.png"
