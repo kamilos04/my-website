@@ -13,8 +13,8 @@ export const GlobalStyle = createGlobalStyle`
         flex-direction: column; */
         background-size: 2.5rem 2.5rem;
         background-image:
-        linear-gradient(to right, rgb(28,28,28) 1px, transparent 1px),
-        linear-gradient(to bottom, rgb(28,28,28) 1px, transparent 1px);
+        linear-gradient(to right, rgb(15,15,15) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(15,15,15) 1px, transparent 1px);
     }
     
     html{
