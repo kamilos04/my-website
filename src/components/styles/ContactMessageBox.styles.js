@@ -23,3 +23,5 @@ export const CloseImgStyle = styled.img`
     top: 1rem;
     position: absolute;
 `
+
+//not used

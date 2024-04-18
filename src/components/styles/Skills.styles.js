@@ -47,7 +47,7 @@ export const SkillsIconImgStyle = styled.img`
 `
 
 export const SkillsTable = styled.div`
-    width: 49rem;
+    width: 70rem;
     display: flex;
     flex-direction: row;
     justify-content: center;

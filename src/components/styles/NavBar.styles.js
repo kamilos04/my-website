@@ -40,10 +40,10 @@ export const NavBarStyle = styled.div`
     width: 100%;
     box-sizing: border-box; 
     background-color: black;
-    background-size: 2.5rem 2.5rem;
+    /* background-size: 2.5rem 2.5rem;
         background-image:
         linear-gradient(to right, rgb(15,15,15) 1px, transparent 1px),
-        linear-gradient(to bottom, rgb(15,15,15) 1px, transparent 1px);
+        linear-gradient(to bottom, rgb(15,15,15) 1px, transparent 1px); */
     z-index: 2;
     @media ${device.mobileS} {
         display: none;

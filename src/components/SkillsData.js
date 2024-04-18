@@ -7,9 +7,35 @@ import GitImg from "../images/git.png"
 import GitHubImg from "../images/github.png"
 import DjangoImg from "../images/django.png"
 import FramerMotionImg from "../images/framermotion.png"
+import SpringImg from "../images/spring.png"
+import JavaImg from "../images/java.png"
+import PostgreImg from "../images/postgre.png"
+import HibernateImg from "../images/hibernate.png"
+import MuiImg from "../images/mui.png"
 export const SkillsData = {
     "color": "white",
     "skills": [
+        {
+            "text": "Spring Boot",
+            "image": SpringImg,
+            "tabs": ["backend"]
+        },
+        {
+            "text": "Java",
+            "image": JavaImg,
+            "tabs": ["backend"]
+        },
+        {
+            "text": "PostgreSQL",
+            "image": PostgreImg,
+            "tabs": ["backend"]
+        },
+        {
+            "text": "Hibernate",
+            "image": HibernateImg,
+            "tabs": ["backend"]
+        },
+        
         {
             "text": "React",
             "image": ReactImg,
@@ -18,6 +44,11 @@ export const SkillsData = {
         {
             "text": "JavaScript",
             "image": JavaScriptImg,
+            "tabs": ["frontend"]
+        },
+        {
+            "text": "Material UI",
+            "image": MuiImg,
             "tabs": ["frontend"]
         },
         {
@@ -44,11 +75,6 @@ export const SkillsData = {
             "text": "GitHub",
             "image": GitHubImg,
             "tabs": ["other"]
-        },
-        {
-            "text": "Django",
-            "image": DjangoImg,
-            "tabs": ["backend"]
         },
         {
             "text": "Framer Motion",

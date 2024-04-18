@@ -25,9 +25,9 @@ const PhotoAnimation = {
 
 
 function ShortText(props) {
-    const shortTextEN = "I am a computer science student. I mainly work with Django and React."
+    const shortTextEN = "I am a computer science student. I mainly work with Spring Boot and React."
     const shortTextENSplitted = shortTextEN.split("");
-    const shortTextPL = "Jestem studentem informatyki. Głównie zajmuje się Django oraz Reactem."
+    const shortTextPL = "Jestem studentem informatyki. Głównie piszę w Spring Boot oraz React."
     const shortTextPLSplitted = shortTextPL.split("");
 
 
