@@ -111,7 +111,7 @@ export const NavBarLanguageStyle = styled(motion.div)`
     }
     @media ${device.laptop} {
         margin-left: 1rem;
-        margin-top: 0rem;
+        margin-top: 0.5rem;
         margin-bottom: 0rem;
         margin-right: 0rem;
         display: flex;

@@ -34,9 +34,8 @@ export function About() {
                         I've been interested in programming since elementary school. In October 2023, I started studying <AboutTextImportant>Computer Science at the Applied Mathematics faculty of the Silesian University of Technology</AboutTextImportant>.</> : <>Nazywam się <AboutTextImportant>Kamil</AboutTextImportant> i
                             mam <AboutTextImportant>19 lat</AboutTextImportant>. Programowaniem interesuje się od szkoły podstawowej. Od października 2023 roku studiuję <AboutTextImportant>Informatykę na wydziale Matematyki Stosowanej na Politechnice Śląskiej</AboutTextImportant>.</>}
                     </AboutTextSection>
-                    <AboutTextSection>{language === "en" ? <>I'm currently focusing on Spring Boot.
-                        At the moment, I would most like to work as a software engineer in a bank.</> : <> Aktualnie skupiam się na Spring Boot.
-                        Na ten moment najbardziej chciałbym zostać programistą w banku</>}</AboutTextSection>
+                    <AboutTextSection>{language === "en" ? <>Currently, I am focusing on developing my skills in Spring Boot, with the goal of becoming a software engineer in the banking sector.</> : <> Obecnie skupiam się
+                    na rozwijaniu umiejętności w Spring Boot, z myślą o przyszłej karierze programisty w sektorze bankowym.</>}</AboutTextSection>
                     <AboutTextSection>{language === "en" ? <>Besides programming, I'm interested in aviation and business. I also love physical activity.</> : <>Poza programowaniem interesuję się lotnictwem oraz biznesem. Uwielbiam również aktywność fizyczną. </>}</AboutTextSection>
                 </AboutText>
                 <AboutTimeLine />
